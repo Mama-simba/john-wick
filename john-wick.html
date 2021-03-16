@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wick movie</title>
+
+    <style>
+
+        body {
+
+            background: linear-gradient(180deg, rgba(21,62,144,1) 50%, rgba(21,62,144,0.8435749299719888) 100%);
+        
+            
+            /*background: radial-gradient(circle, rgba(4,4,4,1) 32%, rgba(196,194,194,0.4948354341736695) 100%);*/
+        }
+
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px 0 #000000;
+            padding: 20px;
+            background-color: white;;
+        }
+
+        h1 {
+            border: 6px dotted black;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+        }
+
+        span {
+            color: #153e90;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            border-radius: 4px;
+        }
+
+        p {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 2;
+        }
+
+        a {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: black
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+
+        button {
+            display: block;
+            margin: 40px auto;
+            padding: 20px 35px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            border: none;
+            border-radius: 20px;
+            color:whitesmoke;
+            background-color: black;
+            box-shadow: 1px 1px 5px 0 #000000;
+        }
+
+        button:hover {
+            cursor: pointer;
+            color: white;
+            transition: white 1.5s linear 0.5s;
+            background-color: #153e90;
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: grey;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    <h1>I love Keanu Reeves movies</h1>
+    <h2>Especially <span>John Wick</span></h2>
+    <hr />
+    <br />
+
+    <img src="https://mussmansehen.de/wp-content/uploads/2020/05/john-wick-1360x765.jpg" alt="Image of Keanu Reeves as John Wick"/>
+
+    <br />
+    <hr />
+
+    <p>With the untimely death of his beloved wife still bitter in his mouth, John Wick, the expert former assassin, receives
+    one final gift from her: a precious keepsake to help <strong>John</strong> find a new meaning in life now that she is gone. But when the
+    arrogant Russian mob prince, <em>Iosef Tarasov</em>, and his men pay Wick a rather unwelcome visit to rob him of his prized 1969
+    Mustang and his wife's present, the legendary hitman will be forced to unearth his meticulously concealed identity.
+    Blind with revenge, John will immediately unleash a carefully orchestrated maelstrom of destruction against the
+    sophisticated kingpin, <em>Viggo Tarasov</em>, and his family, who are fully aware of his lethal capacity. Now, only blood can
+    quench the boogeyman's thirst for retribution.</p>
+
+    <span>🎬</span><a href="https://youtu.be/C0BMx-qxsP4" target="_blank">Watch the trailer here</a>
+    <button>Watch John Wick now!</button>
+
+    <footer>©️ Coded by Cristina Padilla</footer>
+
+    </div>
+
+    <script>
+
+        function watchMovie(){
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+
+            if(email.length <= 10){
+                alert("Please, enter your email address");
+            } else {
+                alert(`Thank you, ${name}! We'll be in touch by email. Meanwhile watch a lot of Keanu Reeves movies!`);
+            }
+        }
+
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", watchMovie);
+
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>
