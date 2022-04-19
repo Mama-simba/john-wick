@@ -1,3 +1,3 @@
-# John Wick Sinopsis
+# John Wick Sinopsis :movie_camera:
 
-A simple landing page to put in practise HTML, CSS and user interaction (JavaScript DOM manipulation) concepts.
+A synopsis landing page to put in practise some HTML, CSS and user interaction (JavaScript DOM manipulation) concepts.
